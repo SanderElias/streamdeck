@@ -5,18 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "ts-node test"
+    "run": "nodemon --watch '*.ts' --ignore '*.spec.ts' --exec 'ts-node' test"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@julusian/jpeg-turbo": "^0.5.3",
+    "@types/clipboardy": "^2.0.1",
     "@types/open": "^6.2.1",
     "@types/opn": "^5.5.0",
     "@types/sharp": "^0.24.0",
+    "clipboardy": "^2.2.0",
     "elgato-stream-deck": "^3.3.0",
     "i3": "^0.2.1",
     "node-i3": "0.0.1",
+    "nodemon": "^2.0.2",
     "open": "^7.0.3",
     "opn": "^6.0.0",
     "sharp": "^0.25.1",
